@@ -32,7 +32,7 @@ git log
 
 git status
 
-// Note les changements ne sont mise en scène 'staged' pour un commit.  
+// Note les changements ne sont pas mise en scène 'staged' pour un commit.  
 
 // Il faudra faire un git add
 
@@ -47,8 +47,22 @@ git add .
 git reset HEAD nomFichier
 
 // Pour "stager + commit" en une commande:
+// Note: pas d'impact pour les nouveaux fichiers
 git commit -a -m "révision 3"
+
  
+// Suppression d'un fichier
+
+1 - effacer le fichier
+gat status
+
+pour récupérer le fichier:
+
+git checkout -- xyleFichierEffacerx
+
+
+2 - git add leFichierEffacer
+3 - git commit -m "J'ai effacé le fichier leFichierEffacer"
 
 
 

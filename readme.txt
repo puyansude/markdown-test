@@ -19,6 +19,36 @@ git add .
 
 git status
 
+// Créer un point de restoration
+git commit -m "révision 1"
+
+
+git status
+
+//Afficher les points de restoration
+git log
+
+// Modifier le contenu du fichier index.html
+
+git status
+
+// Note les changements ne sont mise en scène 'staged' pour un commit.  
+
+// Il faudra faire un git add
+
+// Ou bien, il est possible d'annuler les changements fait au fichier avec:
+
+git checkout -- nomFichier
+
+git add .
+
+// Pour 'unstager' un fichier:
+
+git reset HEAD nomFichier
+
+
+
+
 
 
 

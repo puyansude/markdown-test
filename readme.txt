@@ -46,7 +46,9 @@ git add .
 
 git reset HEAD nomFichier
 
-
+// Pour "stager + commit" en une commande:
+git commit -a -m "révision 3"
+ 
 
 
 

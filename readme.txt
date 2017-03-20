@@ -53,6 +53,34 @@ git commit -a -m "révision 3"
 // Déplacer la tête 'HEAD' à un autre point dans le temps:
 git reset --hard 9880b6624ec75f026ed9f62ffba93d8b93f69d51
 
+// Lister les fichiers d'un dépot:
+git ls-tree HEAD
+git ls-tree master
 
+// Lister les fichiers de master - 3 commits
+git ls-tree master~3 
 
+// Exemples de logs
+git log --oneline
 
+////
+// Afficher les modifications d'un commit:
+git show cfd3397e
+
+commit cfd3397e930b8484fc02ed93a7127393550008c8
+Author: Alain <alain@MacBook-Pro.local>
+Date:   Sun Mar 19 20:46:54 2017 -0400
+
+    Mise à jour du fichier readme
+
+diff --git a/readme.txt b/readme.txt
+index 2a86175..a492a04 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -50,7 +50,8 @@ git reset HEAD nomFichier
+ git commit -a -m "révision 3"
+  
+ 
+-
++// Déplacer la tête 'HEAD' à un autre point dans le temps:
++git reset --hard 9880b6624ec75f026ed9f62ffba93d8b93f69d51

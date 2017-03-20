@@ -50,7 +50,8 @@ git reset HEAD nomFichier
 git commit -a -m "révision 3"
  
 
-
+// Déplacer la tête 'HEAD' à un autre point dans le temps:
+git reset --hard 9880b6624ec75f026ed9f62ffba93d8b93f69d51
 
 
 

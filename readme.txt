@@ -84,3 +84,35 @@ index 2a86175..a492a04 100644
 -
 +// Déplacer la tête 'HEAD' à un autre point dans le temps:
 +git reset --hard 9880b6624ec75f026ed9f62ffba93d8b93f69d51
+
+///--------------------------
+
+// Créer une branche et rester sur la branche courant
+git branch nom_branche
+
+// Créer une branche et se déplacer sur la nouvelle branche
+git branch -b nom_branche
+
+
+// Déplacer HEAD vers une branche
+git checkout nom_branche
+
+// Renommer une branche (--move)
+git branch -m nom_courant nouveau_nom
+
+
+// Effacer une branche (--delete, se placer sur la branche 'master' avant d'effacer)
+git branch -d nom_branche_a_effacer
+
+// Afficher les différences entre 2 branches:
+git diff master...ajout_fn1
+
+// Ajout du nom de la branche dans l'invite (prompt) du système
+
+
+
+////======================
+// github
+// https://stackedit.io/editor
+
+
